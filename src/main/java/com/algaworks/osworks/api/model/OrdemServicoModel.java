@@ -3,12 +3,13 @@ package com.algaworks.osworks.api.model;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
+import com.algaworks.osworks.domain.model.ClienteResumoModel;
 import com.algaworks.osworks.domain.model.StatusOrdemServico;
 
 public class OrdemServicoModel {
 
 	private Long id;
-	private String nomeCliente;
+	private ClienteResumoModel cliente;
 	private String descricao;
 	private BigDecimal preco;
 	private StatusOrdemServico status;
@@ -23,12 +24,12 @@ public class OrdemServicoModel {
 		this.id = id;
 	}
 
-	public String getNomeCliente() {
-		return nomeCliente;
+	public ClienteResumoModel getCliente() {
+		return cliente;
 	}
 
-	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
+	public void setCliente(ClienteResumoModel cliente) {
+		this.cliente = cliente;
 	}
 
 	public String getDescricao() {

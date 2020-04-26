@@ -28,7 +28,7 @@ public class ClienteController {
 
 	@Autowired
 	private ClienteRepository clienteRepository;
-	
+
 	@Autowired
 	private CadastroClienteService CadastroCliente;
 
